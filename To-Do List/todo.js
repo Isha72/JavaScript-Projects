@@ -7,10 +7,16 @@ function handleCost(event)
   }
 }
 
-const arr = [{
+const arr = JSON.parse(localStorage.getItem('arr')) || [{
   name: '',
   dueDate: ''
 }];
+
+print();
+
+function saveToStorage() {
+  localStorage.setItem('arr', JSON.stringify(arr));
+}
 
 function add()
 {
@@ -29,6 +35,7 @@ function add()
   inputdate.value = '';
 
   print();
+  saveToStorage();
 }
 
 function print()
@@ -44,6 +51,7 @@ function print()
       <button onclick="
       arr.splice(${i}, 1);
       print();
+      saveToStorage();
       "
       class="delete-button">
           Delete
