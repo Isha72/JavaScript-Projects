@@ -7,7 +7,7 @@ body{
     font-weight: bold;
     font-size: 30px;
   }
-  .reset-button{
+  .reset-button, .auto-play-button{
     padding: 8px 15px ;
     border: none;
     background-color: white;
@@ -22,7 +22,6 @@ body{
     border-radius: 60px;
     margin-right: 10px;
     cursor: pointer;
-    
   }
   .move-icon{
     height: 50px;
