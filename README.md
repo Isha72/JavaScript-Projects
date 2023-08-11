@@ -1,4 +1,4 @@
-# Projects that I made using JavaScript, React.js
+# Projects that I made using JavaScript
 HTML, CSS, JavaScript
 
 
